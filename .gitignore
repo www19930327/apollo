@@ -26,3 +26,6 @@ target
 # git
 *.orig
 
+/apollo-adminservice/src/main/docker/apollo-adminservice-1.4.0-github.zip
+/apollo-configservice/src/main/docker/apollo-configservice-1.4.0-github.zip
+/apollo-portal/src/main/docker/apollo-portal-1.4.0-github.zip
