@@ -9,11 +9,11 @@ cp ./apollo-configservice/target/*-github.zip ./apollo-configservice/src/main/do
 cp ./apollo-adminservice/target/*-github.zip ./apollo-adminservice/src/main/docker/
 
 # build 镜像(www19930327是用户名)
-docker build -t www19930327/apollo-portal:vm ./apollo-portal/src/main/docker/
-docker build -t www19930327/apollo-configservice:vm ./apollo-configservice/src/main/docker/
-docker build -t www19930327/apollo-adminservice:vm ./apollo-adminservice/src/main/docker/
+docker build -t www19930327/apollo-portal ./apollo-portal/src/main/docker/
+docker build -t www19930327/apollo-configservice ./apollo-configservice/src/main/docker/
+docker build -t www19930327/apollo-adminservice ./apollo-adminservice/src/main/docker/
 
 # push到镜像仓库
-docker push www19930327/apollo-portal:vm
-docker push www19930327/apollo-configservice:vm
-docker push www19930327/apollo-adminservice:vm
+docker push www19930327/apollo-portal
+docker push www19930327/apollo-configservice
+docker push www19930327/apollo-adminservice
